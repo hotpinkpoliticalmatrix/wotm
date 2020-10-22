@@ -10,9 +10,9 @@ backend:
 media_folder: static/assets
 public_folder: /assets
 collections:
-  - name: post
+  - name: Post
     label: Post
-    folder: src/Post
+    folder: src
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
