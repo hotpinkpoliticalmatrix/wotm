@@ -12,9 +12,9 @@ public_folder: /assets
 collections:
   - name: Post
     label: Post
-    folder: src
+    folder: src/Post
     create: true
-    slug: "posts/{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "Post/{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
