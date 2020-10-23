@@ -10,11 +10,12 @@ backend:
 media_folder: static/assets
 public_folder: /assets
 collections:
-  - name: Post
+  - name: post
     label: Post
-    folder: src
+    folder: src/Post
     create: true
-    slug: "Post/{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{slug}}"
+    preview_path: "blog/{{year}}/{{month}}/{{slug}}"
     fields:
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
